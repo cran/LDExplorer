@@ -1,5 +1,5 @@
 d32239bcb673463ab874e80d47fae504 *COPYING
-b4a1b0db05a83a39bb4ff0be78ffe071 *DESCRIPTION
+73e314fbb167c7bf828ddfdaf9428c6d *DESCRIPTION
 23575342b36dcb6e1a839382349caa62 *NAMESPACE
 468797a5583170a56574042fe09bae9c *R/MIG.R
 53c87fc49c5decffd66bb25ee3f0141a *R/MIG_MULTI_CHR.R
@@ -10,7 +10,7 @@ cb48b9d400f5c81a93d4d080a5d9b7fa *inst/doc/HapMapII_r22_CEU_chr20_31767872_33700
 ebf84760e20ec31581cc45695fd2c39e *man/mig.Rd
 fd69fc129a9f2e44906bd158847e8926 *man/mig_multi_chr.Rd
 7fa390789f3955413c24d33864151afd *man/mig_multi_regions.Rd
-9079aeecb0a3665250e61341d7433d08 *src/LDExplorer.cpp
+ef7d9b4c37cf724ebb167a2aba29925c *src/LDExplorer.cpp
 4d8b62a3a40eb447c1a8043f8842d593 *src/LDExplorer.h
 aa547cc98598bcf0bb764a53c85aa3dd *src/Makevars
 39a85d90ea81d7b4353fce3238e9ddae *src/Makevars.win

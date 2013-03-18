@@ -1,6 +1,6 @@
 Package: LDExplorer
-Version: 1.0.1
-Date: 2013-03-14
+Version: 1.0.2
+Date: 2013-03-18
 Title: Efficient Whole-Genome LD Based Haplotpe Block Recognition
 Author: Daniel Taliun <Daniel.Taliun@eurac.edu>, Johann
         Gamper<gamper@inf.unibz.it>, Cristian Pattaro
@@ -13,8 +13,8 @@ Suggests: parallel
 License: GPL (>= 3)
 Repository: CRAN
 Repository/R-Forge/Project: ldexplorer
-Repository/R-Forge/Revision: 54
-Repository/R-Forge/DateTimeStamp: 2013-03-14 15:31:41
-Date/Publication: 2013-03-15 07:21:36
-Packaged: 2013-03-14 19:15:14 UTC; rforge
+Repository/R-Forge/Revision: 55
+Repository/R-Forge/DateTimeStamp: 2013-03-18 16:46:50
+Date/Publication: 2013-03-18 23:22:20
+Packaged: 2013-03-18 19:15:45 UTC; rforge
 NeedsCompilation: yes
