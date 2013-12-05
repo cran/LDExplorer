@@ -1,5 +1,5 @@
 /*
- * Copyright © 2013 Daniel Taliun, Johann Gamper and Cristian Pattaro. All rights reserved.
+ * Copyright ï¿½ 2013 Daniel Taliun, Johann Gamper and Cristian Pattaro. All rights reserved.
  *
  * This file is part of LDExplorer.
  *
@@ -27,6 +27,8 @@
 #include "../../writer/include/WriterFactory.h"
 #include "CIFactory.h"
 #include "Partition.h"
+
+#include <R.h>
 
 using namespace std;
 

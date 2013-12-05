@@ -1,5 +1,5 @@
 /*
- * Copyright © 2013 Daniel Taliun, Johann Gamper and Cristian Pattaro. All rights reserved.
+ * Copyright ï¿½ 2013 Daniel Taliun, Johann Gamper and Cristian Pattaro. All rights reserved.
  *
  * This file is part of LDExplorer.
  *
@@ -140,7 +140,7 @@ void AlgorithmMIGPP::compute_preliminary_blocks() throw (Exception) {
 				++calculations;
 
 				ci->get_CI(i, j, &lower_ci, &upper_ci);
-				if (!isnan(lower_ci) && !isnan(upper_ci)) {
+				if (!ISNAN(lower_ci) && !ISNAN(upper_ci)) {
 					if (((auxiliary::fcmp(lower_ci, pos_strong_pair_cl, EPSILON) >= 0) && (auxiliary::fcmp(upper_ci, pos_strong_pair_cu, EPSILON) >= 0)) ||
 							((auxiliary::fcmp(lower_ci, neg_strong_pair_cu, EPSILON) <= 0) && (auxiliary::fcmp(upper_ci, neg_strong_pair_cl, EPSILON) <= 0))) {
 						w_values_sums[i] += strong_pair_weight;

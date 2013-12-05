@@ -1,5 +1,5 @@
 /*
- * Copyright © 2013 Daniel Taliun, Johann Gamper and Cristian Pattaro. All rights reserved.
+ * Copyright ï¿½ 2013 Daniel Taliun, Johann Gamper and Cristian Pattaro. All rights reserved.
  *
  * This file is part of LDExplorer.
  *
@@ -27,6 +27,8 @@
 #include "../../reader/include/ReaderFactory.h"
 #include "DbView.h"
 #include "Unique.h"
+
+#include <R.h>
 
 using namespace std;
 

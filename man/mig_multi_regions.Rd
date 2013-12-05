@@ -7,8 +7,10 @@
 	Haplotype blocks are defined based on D' coefficient of linkage disequilibrium (Gabriel et al., 2002).
 }
 \usage{
-	mig_multi_regions(phase_file, output_files, regions_start, regions_end, processes = 1, 
-	phase_file_format = "VCF", map_file = NULL, maf = 0.0, ci_method = "WP",
+	mig_multi_regions(phase_file, output_files, regions_start, 
+	regions_end, processes = 1, 
+	phase_file_format = "VCF", map_file = NULL, maf = 0.0, 
+	ci_method = "WP",
 	l_density = 100, ld_ci = c(0.7, 0.98), ehr_ci = 0.9, 
 	ld_fraction = 0.95, pruning_method = "MIG++", windows = NULL)
 }
@@ -91,14 +93,15 @@
     newWd <- paste(system.file(package="LDExplorer"), "doc", sep="/")
     setwd(newWd)
 }
-	
+\dontrun{	
     # load LDExplorer library
     library(LDExplorer)
 	
     # run mig_multi_regions() function on HapMap phase II CEU data with default arguments.
     mig_multi_regions(
      phase_file = "HapMapII_r22_CEU_chr20_31767872_33700401.phase.gz", 
-     output_file = c("HapMapII_r22_CEU_chr20_31767872_32767871.blocks.txt", "HapMapII_r22_CEU_chr20_32767872_33700401.blocks.txt"),
+     output_file = c("HapMapII_r22_CEU_chr20_31767872_32767871.blocks.txt", 
+		"HapMapII_r22_CEU_chr20_32767872_33700401.blocks.txt"),
      regions_start = c(31767872, 32767872),
      regions_end = c(32767871, 33700401),
      processes = 2,
@@ -116,7 +119,7 @@
      "HapMapII_r22_CEU_chr20_32767872_33700401.blocks.txt",
      title="HapMapII_r22_CEU_chr20_32767872_33700401.blocks.txt"
     )
-		
+}		
 \dontshow{
     # restore previous workspace
     setwd(currentWd)

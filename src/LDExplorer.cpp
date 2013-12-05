@@ -1,5 +1,5 @@
 /*
- * Copyright © 2013 Daniel Taliun, Johann Gamper and Cristian Pattaro. All rights reserved.
+ * Copyright ï¿½ 2013 Daniel Taliun, Johann Gamper and Cristian Pattaro. All rights reserved.
  *
  * This file is part of LDExplorer.
  *
@@ -106,7 +106,7 @@ extern "C" {
 			c_value = (double)INTEGER(value)[0];
 		} else {
 			c_value = REAL(value)[0];
-			if (isnan(c_value)) {
+			if (ISNAN(c_value)) {
 				error("'%s' argument is NA/NaN.", name);
 			}
 		}
@@ -138,7 +138,7 @@ extern "C" {
 		} else {
 			for (unsigned int i = 0; i < length; ++i) {
 				c_value[i] = REAL(value)[i];
-				if (isnan(c_value[i])) {
+				if (ISNAN(c_value[i])) {
 					error("'%s' argument contains NA/NaN value(s).", name);
 				}
 			}
@@ -169,7 +169,7 @@ extern "C" {
 			c_value_int = INTEGER(value)[0];
 		} else {
 			c_value_double = REAL(value)[0];
-			if (isnan(c_value_double)) {
+			if (ISNAN(c_value_double)) {
 				error("'%s' argument is NA/NaN.", name);
 			}
 			c_value_int = (long int)c_value_double;
@@ -204,7 +204,7 @@ extern "C" {
 		} else {
 			for (unsigned int i = 0; i < length; ++i) {
 				c_value_double = REAL(value)[i];
-				if (isnan(c_value_double)) {
+				if (ISNAN(c_value_double)) {
 					error("'%s' argument contains NA/NaN value(s).", name);
 				}
 				c_value[i] = (long int)c_value_double;
@@ -233,7 +233,7 @@ extern "C" {
 		} else {
 			for (long int i = 0; i < size; ++i) {
 				c_value_double = REAL(value)[i];
-				if (isnan(c_value_double)) {
+				if (ISNAN(c_value_double)) {
 					error("'%s' argument contains NA/NaN value(s).", name);
 				}
 				c_value.push_back((long int)c_value_double);

@@ -163,8 +163,8 @@
     currentWd <- getwd()
     newWd <- paste(system.file(package="LDExplorer"), "doc", sep="/")
     setwd(newWd)
-}
-	
+}	
+\dontrun{
     # load LDExplorer library
     library(LDExplorer)
 	
@@ -193,7 +193,7 @@
      "1000G_phase1_v3_20101123_CEU_chr2_89153688_89307566.blocks.txt",
      title="1000G_phase1_v3_20101123_CEU_chr2_89153688_89307566.blocks.txt"
     )
-	
+}
 \dontshow{
     # restore previous workspace
     setwd(currentWd)

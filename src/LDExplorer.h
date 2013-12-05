@@ -1,5 +1,5 @@
 /*
- * Copyright © 2013 Daniel Taliun, Johann Gamper and Cristian Pattaro. All rights reserved.
+ * Copyright ï¿½ 2013 Daniel Taliun, Johann Gamper and Cristian Pattaro. All rights reserved.
  *
  * This file is part of LDExplorer.
  *
@@ -20,6 +20,6 @@
 #ifndef LDEXPLORER_H_
 #define LDEXPLORER_H_
 
-#define LDEXPLORER_VERSION "LDExplorer 1.0.1"
+#define LDEXPLORER_VERSION "LDExplorer 1.0.3"
 
 #endif

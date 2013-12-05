@@ -1,5 +1,5 @@
 /*
- * Copyright © 2013 Daniel Taliun, Johann Gamper and Cristian Pattaro. All rights reserved.
+ * Copyright ï¿½ 2013 Daniel Taliun, Johann Gamper and Cristian Pattaro. All rights reserved.
  *
  * This file is part of LDExplorer.
  *
@@ -1339,7 +1339,7 @@ const DbView* Db::create_view(double maf_threshold, unsigned long int start_posi
 		return NULL;
 	}
 
-	if (!isnan(maf_threshold)) {
+	if (!ISNAN(maf_threshold)) {
 		for (unsigned int i = start_index; i <= end_index; ++i) {
 			if (auxiliary::fcmp((1.0 - all_major_allele_freqs[i]), maf_threshold, EPSILON) > 0) {
 				++n_markers;
@@ -1395,7 +1395,7 @@ const DbView* Db::create_view(double maf_threshold, unsigned long int start_posi
 		throw Exception(__FILE__, __LINE__, "Error in memory allocation.");
 	}
 
-	if (!isnan(maf_threshold)) {
+	if (!ISNAN(maf_threshold)) {
 		for (unsigned int i = start_index, j = 0u; i <= end_index; ++i) {
 			if (auxiliary::fcmp((1.0 - all_major_allele_freqs[i]), maf_threshold, EPSILON) > 0) {
 				if (j >= view->n_markers) {
